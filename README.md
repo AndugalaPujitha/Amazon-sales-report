@@ -1,41 +1,134 @@
-📊 Amazon Sales Analysis Report
-📌 Project Overview
-This project provides an in-depth analysis of Amazon sales data using Power BI. The dataset includes order details, product categories, fulfillment types, shipping information, and financial insights to help understand sales trends and business performance.
+# 📊 Amazon Sales Analysis Report
 
-💁️ Dataset Information
-Total Records: 49 transactions
-Columns: 20 attributes covering order details, shipping data, product specifics, and sales amounts.
-Key Data Fields:
-Order Details: Order ID, Date, Status (Shipped, Delivered, Cancelled)
-Fulfillment & Sales Channel: Amazon/Merchant, Amazon.in
-Shipping Details: Service level, City, State, Country
-Product Information: SKU, Category, Size, ASIN
-Courier & Financials: Courier Status, Quantity Sold, Currency, Sales Amount
-📊 Insights & Visualizations
-Using Power BI, this report includes:
+## 📌 Project Overview
+This project provides an **in-depth analysis of Amazon sales data using Power BI**. The dataset contains order details, product categories, fulfillment types, shipping information, and financial insights. The goal of this project is to analyze sales trends, understand customer behavior, and identify business performance patterns.
 
-1. Sales Performance:
-Total sales, average sales, and quantity sold.
-Trends over time (monthly/weekly sales).
-2. Product Insights:
-Best-performing product categories and sizes.
-Distribution of sales across categories.
-3. Geographical Insights:
-Regions with the highest sales (ship-city, ship-state, ship-country).
-Correlation between shipping location and courier status.
-4. Fulfillment Efficiency:
-Percentage of orders shipped on time.
-Issues by fulfillment type (Amazon vs. Merchant).
-5. Customer Type Insights:
-Comparison of B2B vs. B2C orders.
-Their impact on overall revenue.
-6. Order Status Analysis:
-Proportion of cancelled vs. shipped orders.
-Analysis of "Courier Status" for delivery performance.
-🔍 Missing Data:
-Columns like New and PendingS have no values and can likely be excluded.
-fulfilled-by has significant missing data (only ~30% populated).
-💍 Tools & Technologies
-Power BI for Data Visualization
-Excel for Data Processing
-Data Cleaning & Transformation for accurate reporting
+---
+
+## 💾 Dataset Information
+
+- **Total Records:** 49 transactions  
+- **Total Columns:** 20 attributes  
+
+The dataset includes the following key information:
+
+### Order Details
+- Order ID
+- Date
+- Order Status (Shipped, Delivered, Cancelled)
+
+### Fulfillment & Sales Channel
+- Fulfillment Type (Amazon / Merchant)
+- Sales Channel (Amazon.in)
+
+### Shipping Details
+- Service Level
+- Ship City
+- Ship State
+- Ship Country
+
+### Product Information
+- SKU
+- Category
+- Size
+- ASIN
+
+### Courier & Financial Details
+- Courier Status
+- Quantity Sold
+- Currency
+- Sales Amount
+
+---
+
+## 📊 Insights & Visualizations
+
+The dashboard built in **Power BI** provides the following insights:
+
+### 1️⃣ Sales Performance
+- Total sales and total quantity sold
+- Average sales value
+- Sales trends over time (weekly / monthly)
+
+### 2️⃣ Product Insights
+- Best-performing product categories
+- Most popular product sizes
+- Category-wise sales distribution
+
+### 3️⃣ Geographical Insights
+- Top cities and states contributing to sales
+- Sales distribution by country
+- Relationship between shipping location and courier status
+
+### 4️⃣ Fulfillment Efficiency
+- Percentage of orders successfully shipped
+- Fulfillment comparison between **Amazon vs Merchant**
+- Delivery performance analysis
+
+### 5️⃣ Customer Type Insights
+- Comparison between **B2B and B2C orders**
+- Impact of customer type on overall revenue
+
+### 6️⃣ Order Status Analysis
+- Ratio of **shipped vs cancelled orders**
+- Courier delivery performance
+
+---
+
+## 🔍 Data Quality Observations
+
+During data analysis, the following issues were identified:
+
+- Columns **`New`** and **`PendingS`** contain no values and may be removed.
+- Column **`fulfilled-by`** contains many missing values (only about **30% populated**).
+- Some fields require **data cleaning and preprocessing** before visualization.
+
+---
+
+## 🛠 Tools & Technologies
+
+- **Power BI** – Data Visualization & Dashboard Creation
+- **Microsoft Excel** – Data Processing and Cleaning
+- **Data Transformation Techniques** – Handling missing values and improving data quality
+
+---
+
+## 📁 Project Structure
+
+```
+Amazon-sales-report-main
+│
+├── dataset/
+│   └── amazon_sales_data.xlsx
+│
+├── dashboard/
+│   └── Amazon_Sales_Dashboard.pbix
+│
+├── images/
+│   └── dashboard_preview.png
+│
+└── README.md
+```
+
+---
+
+## 📈 Key Outcome
+
+This project helps in:
+
+- Understanding **sales trends**
+- Identifying **high-performing products**
+- Evaluating **regional sales performance**
+- Improving **fulfillment and delivery efficiency**
+- Supporting **data-driven business decisions**
+
+---
+
+## 🚀 Future Improvements
+
+- Add larger dataset for better analysis
+- Implement **predictive sales forecasting**
+- Integrate **machine learning for demand prediction**
+- Build an **interactive web dashboard**
+
+---
